@@ -1,0 +1,44 @@
+<p>
+  Score: {{score_title}}
+</p>
+<p><small class="text-muted">Fill this form to publish your score</small></p>
+
+<form class="form-horizontal" name="ContactForm" >
+  
+  <div class="form-group">
+    <label class="col-lg-2 control-label" for="inputName">Name</label>
+    <div class="col-lg-10">
+      <input type="text" name="Name" [(ngModel)]="name" #Name class="form-control" id="inputNameF" placeholder="First Name">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-lg-2 control-label" for="inputEmail">Email ID</label>
+    <div class="col-lg-10">
+      <input type="email" name="Email" [(ngModel)]="email" #Email class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-lg-2 control-label" for="inputEmail">Location</label>
+    <div class="col-lg-10">
+      <input type="email" name="Location" [(ngModel)]="location" #Location class="form-control" id="inputLocation" placeholder="Location">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-lg-2 control-label" for="inputEmail">Project-ID</label>
+    <div class="col-lg-10">
+      <input type="email" name="ID" [(ngModel)]="projectid" #ProjectId class="form-control" id="inputProject" placeholder="Project Id">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-lg-2 control-label" for="giturl">GitUrl</label>
+    <div class="col-lg-10">
+      <input type="url" name="ID" [(ngModel)]="giturl" #GitUrl class="form-control" id="giturl" placeholder="giturl">
+    </div>
+  </div>
+  <!-- <button class="btn btn-default" data-dismiss="modal" type="button">Close</button> -->
+  <button class="btn btn-primary" type="button" (click) ="submitPost()" >SUBMIT</button>
+</form>

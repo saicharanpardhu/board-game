@@ -1,0 +1,13 @@
+.quandrant{
+    height: 20em;
+    width: 100%;
+    float: none;
+    padding: 0px;
+    
+}
+.box{
+    margin: auto;
+}
+#q1{
+    /* margin: 0 0 auto 0; */
+}
